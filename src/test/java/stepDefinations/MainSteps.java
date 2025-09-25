@@ -11,9 +11,9 @@ public class MainSteps {
         System.out.println("User is on NetBanking Landing Page");
     }
 
-    @When("User login into application")
-    public void user_login_into_application() {
-        System.out.println("User login into application");
+    @When("User login into application with {string} and password {string}")
+    public void user_login_into_application_with_and(String username, String password) {
+        System.out.println("User login into application with " + username + " and " + password);
     }
 
     @Then("Home page is displayed")
@@ -25,10 +25,4 @@ public class MainSteps {
     public void cards_are_displayed() {
         System.out.println("Cards are displayed");
     }
-
-    @When("User login into application with {string} and {string}")
-    public void user_login_into_application_with_and(String username, String password) {
-        System.out.println("User login into application with " + username + " and " + password);
-    }
-
 }
