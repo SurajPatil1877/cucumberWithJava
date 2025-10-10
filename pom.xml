@@ -12,8 +12,11 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- versions starts -->
         <cucumber.version>7.28.2</cucumber.version>
         <jna.version>5.14.0</jna.version>
+        <selenium.version>4.36.0</selenium.version>
+        <!-- versions ends -->
     </properties>
 
     <dependencies>
@@ -33,6 +36,12 @@
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
             <version>${jna.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
     </dependencies>
 
