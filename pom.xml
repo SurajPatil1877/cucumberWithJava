@@ -13,9 +13,11 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- versions starts -->
-        <cucumber.version>7.28.2</cucumber.version>
+        <selenium.version>4.37.0</selenium.version>
+        <cucumber.version>7.30.0</cucumber.version>
         <jna.version>5.14.0</jna.version>
-        <selenium.version>4.36.0</selenium.version>
+        <lombok.version>1.18.42</lombok.version>
+        <webDriver.version>6.3.2</webDriver.version>
         <!-- versions ends -->
     </properties>
 
@@ -33,6 +35,12 @@
         </dependency>
 
         <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
             <version>${jna.version}</version>
@@ -43,6 +51,19 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webDriver.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
