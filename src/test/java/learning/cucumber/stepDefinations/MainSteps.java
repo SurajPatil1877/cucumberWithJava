@@ -1,4 +1,4 @@
-package stepDefinations;
+package learning.cucumber.stepDefinations;
 
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
