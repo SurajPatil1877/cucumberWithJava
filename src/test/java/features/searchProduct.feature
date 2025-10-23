@@ -1,4 +1,4 @@
-Feature: Search and Place the order for Products
+Feature: Search and Validated the product in Offers Page
 
   Scenario Outline: Search Experience for product search in both home and offers page
     Given User is on GreenKart landing page
