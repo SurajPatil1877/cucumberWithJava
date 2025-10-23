@@ -2,6 +2,7 @@ package pageObjects;
 
 import lombok.experimental.SuperBuilder;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import utils.AbstractPage;
 
 @SuperBuilder
@@ -21,5 +22,11 @@ public class LandingPage extends AbstractPage {
 
     public void openTopDeals() {
         click(topDeals);
+    }
+
+    public void validateTitle() {
+        String expected = "GreenKart - veg and fruits kart";
+        String actual = getTitle();
+        Assert.assertEquals(actual, expected, "Title is not matching");
     }
 }

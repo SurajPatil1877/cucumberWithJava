@@ -12,12 +12,14 @@ public class LandingPageStepDef {
 
     public LandingPageStepDef(TestContextSetup setup) {
         this.setup = setup;
-        this.landingPage = setup.getPageObjectManager().getLandingPage();
+        this.landingPage = setup
+                .getPageObjectManager()
+                .getLandingPage();
     }
 
     @Given("User is on GreenKart landing page")
     public void userIsOnGreenKartLandingPage() {
-        landingPage.navigateToHomePage();
+        landingPage.validateTitle();
     }
 
     @When("^User searched with shortname (.+) and extracted actual name of a product$")

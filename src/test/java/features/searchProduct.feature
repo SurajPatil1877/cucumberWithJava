@@ -8,4 +8,5 @@ Feature: Search and Place the order for Products
     Examples:
       | productName |
       | Tom         |
+      | Beet        |
 

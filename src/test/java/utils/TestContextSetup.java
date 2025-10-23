@@ -13,9 +13,10 @@ public class TestContextSetup {
     private String offersPageProductName;
 
     private final PageObjectManager pageObjectManager;
+    private final TestBase testBase;
 
     public TestContextSetup() {
-        TestBase testBase = new TestBase();
+        this.testBase = new TestBase();
         this.pageObjectManager = new PageObjectManager(testBase.setupDriver());
     }
 
