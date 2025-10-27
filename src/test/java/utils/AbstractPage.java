@@ -60,6 +60,10 @@ public abstract class AbstractPage {
         return driver.getCurrentUrl();
     }
 
+    public boolean elementIsPresent(By by){
+        return driver.findElement(by).isDisplayed();
+    }
+
     private WebElement findElement(By by) {
         return driver.findElement(by);
     }

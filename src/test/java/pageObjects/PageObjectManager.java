@@ -8,7 +8,7 @@ public class PageObjectManager {
     private LandingPage landingPage;
     private OffersPage offersPage;
     private final WebDriver driver;
-
+    private CartPage cartPage;
 
     public LandingPage getLandingPage() {
         if (landingPage != null) return landingPage;
@@ -22,6 +22,12 @@ public class PageObjectManager {
 
         offersPage = OffersPage.builder().driver(driver).build();
         return offersPage;
+    }
+
+    public CartPage getCartPage() {
+        if (cartPage != null) return cartPage;
+        cartPage = CartPage.builder().driver(driver).build();
+        return cartPage;
     }
 
 }

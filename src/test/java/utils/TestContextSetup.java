@@ -12,6 +12,9 @@ public class TestContextSetup {
     @Setter
     private String offersPageProductName;
 
+    @Setter
+    private int productQuantity;
+
     private final PageObjectManager pageObjectManager;
     private final TestBase testBase;
 
