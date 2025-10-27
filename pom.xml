@@ -18,6 +18,9 @@
         <jna.version>5.14.0</jna.version>
         <lombok.version>1.18.42</lombok.version>
         <webDriver.version>6.3.2</webDriver.version>
+        <extentReport.version>5.1.2</extentReport.version>
+        <grassShopper.version>1.14.0</grassShopper.version>
+        <commons.version>2.20.0</commons.version>
         <!-- versions ends -->
     </properties>
 
@@ -62,6 +65,24 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webDriver.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentReport.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>${grassShopper.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.version}</version>
         </dependency>
 
     </dependencies>

@@ -1,5 +1,6 @@
-Feature: Search and Place the order for Products
+Feature: Search and Validated the product in Offers Page
 
+  @OffersPage
   Scenario Outline: Search Experience for product search in both home and offers page
     Given User is on GreenKart landing page
     When User searched with shortname <productName> and extracted actual name of a product
@@ -8,5 +9,5 @@ Feature: Search and Place the order for Products
     Examples:
       | productName |
       | Tom         |
+      | Beet        |
 
-    #37

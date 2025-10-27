@@ -32,11 +32,9 @@ public abstract class AbstractPage {
                 .window(tabs.get(1));
     }
 
-    public void navigateToHomePage() {
-        driver
-                .navigate()
-                .to("https://rahulshettyacademy.com/seleniumPractise/#/");
-    }
+  public String getTitle(){
+        return driver.getTitle();
+  }
 
     public void enterText(By by, String text) {
         findElement(by)
@@ -60,6 +58,10 @@ public abstract class AbstractPage {
 
     public String getCurrentURL() {
         return driver.getCurrentUrl();
+    }
+
+    public boolean elementIsPresent(By by){
+        return driver.findElement(by).isDisplayed();
     }
 
     private WebElement findElement(By by) {

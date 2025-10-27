@@ -12,10 +12,14 @@ public class TestContextSetup {
     @Setter
     private String offersPageProductName;
 
+    @Setter
+    private int productQuantity;
+
     private final PageObjectManager pageObjectManager;
+    private final TestBase testBase;
 
     public TestContextSetup() {
-        TestBase testBase = new TestBase();
+        this.testBase = new TestBase();
         this.pageObjectManager = new PageObjectManager(testBase.setupDriver());
     }
 
